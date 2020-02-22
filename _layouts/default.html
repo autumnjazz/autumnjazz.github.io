@@ -1,29 +1,36 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>having, doing, and being</title>
+    <title>{{site.title}}</title>
 
-    <link rel="stylesheet" href="{{site.baseurl}}/assets/styles/style.css">
-    <script src="https://code.jquery.com/jquery-3.4.1.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/2.1.2/TweenMax.min.js"></script>
+    <link rel="stylesheet" href="{{site.baseurl}}/assets/css/index.css">
+    <script src="https://kit.fontawesome.com/7a64f1c72a.js" crossorigin="anonymous"></script>
+
+    <link rel="stylesheet" href="https://unpkg.com/metismenu/dist/metisMenu.min.css">
 
 </head>
+
 <body>
 
-    <header>
-        <h1> <a href="{{site.url}}"> having, doing, and being </a></h1>
-    </header>
+    <div class="whole-page">
 
-    {% include nav.html %}
+        {% include nav.html %}
 
-    {{content}}
+        <div class="outer-contents">
+            
+            {{content}}
 
-    <footer>
-    </footer>
+        </div>
 
-    <script src="{{site.baseurl}}/assets/styles/nav.js"></script>
+        {% include sidebar.html %}
+    </div>
 
+    <script src="https://unpkg.com/jquery"></script>
+    <script src="https://unpkg.com/metismenu"></script>
+    <script src="{{site.baseurl}}/assets/js/main.js"></script>
 </body>
+
 </html>

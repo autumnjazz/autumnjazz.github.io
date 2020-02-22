@@ -1,0 +1,40 @@
+<div class="sidebar">
+
+    <div class="widget-name">about me</div>
+    <div class="widget aboutme">
+        <img src="{{site.baseurl}}/assets/img/logo.png" alt="">
+        <p> {{site.about_me}}</p>
+    </div>
+
+
+    <div class="widget-name">Tag</div>
+    <div class="widget tagcloud">
+        {% capture site_tags %}{% for tag in site.tags %}{{ tag | first }}{% unless forloop.last %},{% endunless %}{% endfor %}{% endcapture %}
+        <!-- site_tags: {{ site_tags }} -->
+        {% assign tag_words = site_tags | split:',' | sort %}
+        <!-- tag_words: {{ tag_words }} -->
+        {% for tag in tag_words %}
+        <a href="#">{{ tag }} <span>{{ site.tags[tag] | size }}</span></a>
+        {% endfor %}
+
+        <!--{% for item in (0..site.tags.size) %}{% unless forloop.last %}
+        {% capture this_word %}{{ tag_words[item] | strip_newlines }}{% endcapture %}
+        <h2 id="{{ this_word | cgi_escape }}">{{ this_word }}</h2>
+        <ul class="posts">
+        {% for post in site.tags[this_word] %}
+        <li><span>{{ post.date | date_to_string }}</span> &nbsp; <a href="{{ post.url }}">{{ post.title }}</a></li>
+        {% endfor %}
+        </ul>
+        {% endunless %}{% endfor %} -->
+
+    </div>
+
+
+    <div class="widget-name">contact</div>
+    <div class="widget contact">
+        <ul>
+            <li><a href="http://github.com/{{site.github_username}}"><i class="fab fa-github"></i></a></li>
+            <li><a href="https://instagram.com/{{site.instagram_username}}"><i class="fab fa-instagram"></i></a></li>
+        </ul>
+    </div>
+</div>
