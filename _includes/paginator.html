@@ -42,3 +42,26 @@
         {% endif %}
     </ul>
 </div>
+
+
+<div class="mo-pg">
+    <div class="mobile-pagination">
+        {% if paginator.previous_page %}
+        <li id="page-prev"><a class="hover" href="{{ site.baseurl }}{{ paginator.previous_page_path }}">
+                <i class="fas fa-arrow-left"></i></a>
+        </li>
+        {% else %}
+        <li id="page-prev" class="disabled"><span class="sr-only">No Previous Page</span></li>
+        {% endif %}
+    </div>
+
+    <div class="mobile-pagination">
+        {% if paginator.next_page %}
+        <li id="page-next"><a href="{{ site.baseurl }}{{ paginator.next_page_path }}" class="hover">
+                <i class="fas fa-arrow-right"></i></a>
+        </li>
+        {% else %}
+        <li id="page-next" class="disabled"><span class="sr-only">No Next Page</span></li>
+        {% endif %}
+    </div>
+</div>

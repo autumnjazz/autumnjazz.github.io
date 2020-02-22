@@ -4,32 +4,10 @@ layout: default
 
 
 
-<div class="mobile-pagination">
-    {% if paginator.previous_page %}
-    <li id="page-prev"><a href="{{ site.baseurl }}{{ paginator.previous_page_path }}">
-            <i class="fas fa-arrow-left"></i></a>
-    </li>
-    {% else %}
-    <li id="page-prev" class="disabled"><span class="sr-only">No Previous Page</span></li>
-    {% endif %}
-</div>
+    {% for post in paginator.posts %}
+    <div class="inner-contents">
+        {% include postlist.html %}
+    </div>
+    {% endfor %}
 
-
-{% for post in paginator.posts %}
-<div class="inner-contents">
-    {% include postlist.html %}
-</div>
-{% endfor %}
-
-
-<div class="mobile-pagination">
-    {% if paginator.next_page %}
-    <li id="page-next"><a href="{{ site.baseurl }}{{ paginator.next_page_path }}">
-            <i class="fas fa-arrow-right"></i></a>
-    </li>
-    {% else %}
-    <li id="page-next" class="disabled"><span class="sr-only">No Next Page</span></li>
-    {% endif %}
-</div>
-
-{% include paginator.html %}
+    {% include paginator.html %}
