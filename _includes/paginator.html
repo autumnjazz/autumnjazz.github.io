@@ -47,7 +47,7 @@
 <div class="mo-pg">
     <div class="mobile-pagination">
         {% if paginator.previous_page %}
-        <li id="page-prev"><a class="hover" href="{{ site.baseurl }}{{ paginator.previous_page_path }}">
+        <li id="page-prev"><a class="mobile-arrow" href="{{ site.baseurl }}{{ paginator.previous_page_path }}">
                 <i class="fas fa-arrow-left"></i></a>
         </li>
         {% else %}
@@ -57,7 +57,7 @@
 
     <div class="mobile-pagination">
         {% if paginator.next_page %}
-        <li id="page-next"><a href="{{ site.baseurl }}{{ paginator.next_page_path }}" class="hover">
+        <li id="page-next"><a href="{{ site.baseurl }}{{ paginator.next_page_path }}" class="mobile-arrow">
                 <i class="fas fa-arrow-right"></i></a>
         </li>
         {% else %}

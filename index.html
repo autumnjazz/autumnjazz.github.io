@@ -3,11 +3,11 @@ layout: default
 ---
 
 
+<div class="inner-contents">
 
     {% for post in paginator.posts %}
-    <div class="inner-contents">
         {% include postlist.html %}
-    </div>
     {% endfor %}
+</div>
 
     {% include paginator.html %}
