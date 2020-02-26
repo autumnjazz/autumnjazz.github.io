@@ -1,99 +1,101 @@
-@import url('https://fonts.googleapis.com/css?family=Open+Sans&display=swap');
-
 *{
-    font-family: 'Open Sans', sans-serif;
-}
-
-/* 헤더 */
-header{
-    background:  #FAFAFA;
-    border-bottom: 1px solid #ccc;
-    position: fixed;
-    top: 0;
-    left: 0;
-    width:100%;
-    z-index: 20;
-    font-family: none;
-}
-
-header a{
-    width: 25%;
-    display: inline-block;
-    margin-left: -3px;
-    text-align: center;
-    padding: 12px;
-    box-sizing: border-box;
-}
-
-i{
-    color: #111;
-    font-size: 25px;
-}
-
-.fa-heart:hover{
-    color: rgb(255, 57, 57);
-}
-
-
-
-/*  */
-
-.container{
-    background: #FAFAFA;
-
-    position: absolute;
-    top: 50px;
-    left: 0;
-
-    bottom: 0;
-    width: 100%;
-    border: 1px solid #ccc;
-}
-
-.card{
-    background: #fff;
-    margin: 0 auto;
-    width: 500px;
-    height: 600px;
-    border: 1px solid #ccc;
-    border-radius: 2px;
-}
-
-/* card header */
-
-.card-header{
-    padding:15px;
-
-}
-
-.profile-img{
-    display: inline-block;
-    height: 30px;
-    width: 30px;
-    border-radius: 50%;
-}
-
-.profile-info{
-    display:inline-block;
-}
-
-.profile-info p{
-    padding: 0;
     margin: 0;
+    padding: 0;
+}
+a{
+    text-decoration: none;
+    color: #262626;
+    padding: 2px;
+}
+
+html{
+    background: #FAFAFA;
+    color: #262626;
+    font-family: -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Helvetica,Arial,sans-serif;
+}
+
+.wrapper{
+    height: 100vh;
+    width: 935px;
+    margin: 0 auto 30px;
+}
+
+
+/* header */
+.header{
+    margin: 50px 0px;
+    display: flex;
+    justify-content: center;
+}
+
+.profile img{
+    width: 90px;
+    height: 90px;
+    border-radius: 50%;
+    margin-right: 50px;
 }
 
 .name{
+    font-size: 28px;
+    line-height: 32px;
+    margin-bottom: 10px;
+}
+
+.desc p {
+    font-size: 16px;
+    margin-bottom: 5px;
+}
+
+/* cards */
+
+.content{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.card{
+    background: #FEFEFE;
+    border-radius: 3px;
+    border: 1px solid #dbdbdb;
+    width: 500px;
+    height: auto;
+    margin-bottom: 60px; 
+}
+
+.card .title{
     font-size: 14px;
-    color: #111;
-    font-weight: 700;
+    font-weight: 600;
+    padding: 16px 40px 16px 16px;
 }
 
-.location{
-    font-size: 12px;
-    color: #111;
+.photo img {
+    width: 100%;
 }
 
-.time{
-    float:right;
-    display:inline-block;
+.card-wrapper{
+    padding : 0px 10px;
+}
+
+.card i{
+    font-size: 20px;
+    padding: 6px;
+    color: #343434;
+}
+.card i:hover{
+    color: #ED4956;
+}
+
+.desc{
+    padding: 6px;
+    font-size: 14px;
+}
+
+.date{
+    font-size: 10px;
+    color: #999;
+    padding: 6px;
+    padding-bottom: 16px;
+
+
 }

@@ -1,0 +1,51 @@
+---
+---
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>instagram: dr.kiwi.j</title>
+    <link rel="stylesheet" href="instagram.css">
+    <script src="https://kit.fontawesome.com/7a64f1c72a.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+
+
+    <div class="container">
+        <div class="wrapper">
+            <div class="header">
+                <div class="profile">
+                    <img src="img/profile.jpg" alt="">
+                </div>
+
+                <div class="desc">
+                    <div class="name">
+                        dr.kiwi.j
+                    </div>
+                    <p> un-developer life;</p>
+                    <p>👉 <a href="{{site.url}}"> return to home</a></p>
+                </div>
+            </div>
+
+            <div class="content">
+
+                {% assign category = page.category | default: page.title %}
+    
+                {% for post in site.categories[category] %}
+                {% include insta-card.html %}
+                <!-- {{post}} -->
+                {% endfor %}
+
+                
+            </div>
+        </div>
+    </div>
+
+
+</body>
+
+</html>

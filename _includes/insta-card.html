@@ -1,0 +1,21 @@
+<div class="card">
+    <div class="title">
+        {{post.title}}
+    </div>
+    <div class="photo">
+        <img src="img/{{post.photo}}" alt=""> 
+    </div>
+    <div class="card-wrapper">
+        <div class="icons">
+            <i class="far fa-heart"></i>
+        </div>
+        <div class="desc">
+            {{post.content}}
+        </div>
+        <div class="date">
+            {{post.date || date: "%Y년 %-m월 %-d일" }}
+        </div>
+    </div>
+</div>
+
+
