@@ -1,4 +1,5 @@
 ---
+layout: null
 ---
 
 <!DOCTYPE html>
@@ -8,7 +9,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>instagram: dr.kiwi.j</title>
-    <link rel="stylesheet" href="instagram.css">
+    <link rel="stylesheet" href="{{site.baseurl}}/assets/css/instagram.css">
     <script src="https://kit.fontawesome.com/7a64f1c72a.js" crossorigin="anonymous"></script>
 </head>
 
@@ -19,7 +20,7 @@
         <div class="wrapper">
             <div class="header">
                 <div class="profile">
-                    <img src="img/profile.jpg" alt="">
+                    <img src="{{site.baseurl}}/assets/instagram/profile.jpg" alt="">
                 </div>
 
                 <div class="desc">
@@ -37,7 +38,6 @@
     
                 {% for post in site.categories[category] %}
                 {% include insta-card.html %}
-                <!-- {{post}} -->
                 {% endfor %}
 
                 
