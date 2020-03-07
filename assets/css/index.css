@@ -143,7 +143,9 @@ body.enlarged .nav {
     line-height: 180%;
 }
     /* post markdown*/
-
+    .post-page .post-content a{
+        color: rgb(66, 184, 231);
+    }
     .post-list .post-content *{
         font-size: 15px;
         font-style: normal;
