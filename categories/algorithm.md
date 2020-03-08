@@ -1,7 +1,7 @@
 ---
 layout: category
-title: algorithm
-permalink: /categories/algorithm
+title: technique
+permalink: /categories/technique
 ---
 
 Another sample category page.

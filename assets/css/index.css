@@ -1,10 +1,5 @@
-@import url('https://fonts.googleapis.com/css?family=Noto+Sans+KR&display=swap&subset=korean');
+@import url('https://fonts.googleapis.com/css?family=Nanum+Gothic&display=swap');
 
-*{
-    font-family: 'Noto Sans KR', sans-serif;
-    margin: 0;
-    padding: 0;
-}
 
 a,
 a:hover{
@@ -12,24 +7,36 @@ a:hover{
     outline: none;
 }
 
+.menu *,
+.pagination *,
+.contact *{
+    margin: 0;
+    padding: 0;
+}
 
+.metismenu li{
+    list-style: none;
+}
 
-li{
+.widget li{
+    list-style: none;
+}
+
+.pagination li{
     list-style: none;
 }
 
 
 
-
 body {
-    font-family: 'Nunito Sans', sans-serif;
+    font-family: 'Nanum Gothic', sans-serif;
     margin: 35px;
 }
 .whole-page{
     display: grid;
     grid-template-columns: 1fr 3fr 1fr;
     min-height: calc(100vh - 150px);
-
+    overflow: auto;
 }
 
 
@@ -98,7 +105,7 @@ body.enlarged .nav {
 }
 
 .outer-contents{
-    padding: 5px 20px;
+    padding: 20px;
     margin: 20px;
 
 }
@@ -110,6 +117,7 @@ body.enlarged .nav {
 .post-box > .title {
     font-size: 22px;
     margin: 0 0 10px;
+    font-weight: bold;
 }
 
 .post-box > .title a {
@@ -123,12 +131,53 @@ body.enlarged .nav {
     font-size: 14px;
 }
 
-.post-content{
+.post-list .post-content{
     margin-top: 20px;
     margin-bottom: 20px;
-    font-size: 15px;
     font-weight: normal;
 }
+
+.post-page .post-content{
+    margin-top: 50px;
+    margin-bottom: 50px;
+    line-height: 180%;
+}
+    /* post markdown*/
+    .post-page .post-content a{
+        color: rgb(66, 184, 231);
+    }
+    .post-list .post-content *{
+        font-size: 15px;
+        font-style: normal;
+        font-weight: normal;
+        color: black;
+        list-style: none;
+        background: none;
+        border: none;
+        font-family: 'Nanum Gothic', sans-serif;
+        padding: 0px;
+        margin: 0px;
+
+    }
+    
+    .post-page code.highlighter-rouge {
+        padding: 2px 4px;
+        font-size: 90%;
+        font-family: monospace;
+        background-color: #f5f5f5;
+        border: 1px solid #ccc;
+        border-radius: 1px;
+        color: #333;
+    }
+
+    div.highlight{
+        padding: 20px;
+        padding-left: 40px;
+        margin: 30px;
+        font-size: 15px;
+    }
+
+
 
 /* pagination */
 .mobile-pagination{
@@ -152,13 +201,12 @@ body.enlarged .nav {
 
 .pagination > li > a{
     border: 2px solid #eeeeee;
-    border-radius: 50%;
     display: block;
     float: none;
-    padding: 8px 15px;
+    padding: 8px 13px;
     transition: all 0.5s;
+    border-radius: 50%;
 }
-
 
 
 .pagination > .active > a,
@@ -231,7 +279,8 @@ body.enlarged .nav {
 
 
 /* responsive */
-@media (max-width: 768px){
+@media (max-width: 1235px){
+
     body{
         margin: 0px;
     }
@@ -297,7 +346,11 @@ body.enlarged .nav {
         padding: 15px;
     }
 
-
+    div.highlight{
+        padding: 20px;
+        margin: 0px;
+        overflow: auto;
+    }
 }
 
 /* sidebar */

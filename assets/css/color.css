@@ -108,7 +108,7 @@ body.enlarged .nav {
     color: #333;
 }
 
-@media (max-width: 768px){
+@media (max-width: 1235px){
     .mobile-nav {
         background: #bdcebd;
     }
