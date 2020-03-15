@@ -14,17 +14,14 @@ a:hover{
     padding: 0;
 }
 
-.metismenu li{
+.metismenu li,
+.widget li,
+.pagination li,
+.mobile-pagination li
+{
     list-style: none;
 }
 
-.widget li{
-    list-style: none;
-}
-
-.pagination li{
-    list-style: none;
-}
 
 
 
