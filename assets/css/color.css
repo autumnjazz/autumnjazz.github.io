@@ -22,11 +22,13 @@ a:hover{
 
 
 html {
-    background-color: #a3a3a3;
+    background-color: #FAFAFA;
 }
 
 .whole-page{
     background:#fff;
+    border: 1px solid #dbdbdb;
+
 }
 
 .description{
@@ -34,7 +36,7 @@ html {
 }
 
 .nav{
-    background-color: #bdcebd;
+    background-color: #ffe6a6;
 }
 
 .menu > ul > li > a{
@@ -110,7 +112,7 @@ body.enlarged .nav {
 
 @media (max-width: 1235px){
     .mobile-nav {
-        background: #bdcebd;
+        background: #ffe6a6;
     }
 
     .mobile-menu{
@@ -122,6 +124,11 @@ body.enlarged .nav {
         color: #E3EAA5;
     }
 
+    .whole-page{
+        border: none;
+    
+    }
+    
 }
 
 
