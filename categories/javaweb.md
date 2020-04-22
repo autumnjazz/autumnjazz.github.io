@@ -1,7 +1,7 @@
 ---
 layout: category
-title: web
-permalink: /categories/web
+title: javaweb
+permalink: /categories/javaweb
 ---
 
 Another sample category page.

@@ -1,7 +1,7 @@
 ---
 layout: category
-title: database
-permalink: /categories/database
+title: javascript
+permalink: /categories/javascript
 ---
 
 Another sample category page.
