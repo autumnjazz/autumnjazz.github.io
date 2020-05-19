@@ -24,7 +24,7 @@ exclude:
   - Gemfile.lock
 
 # pagination
-paginate: 4
+paginate: 7
 paginate_path: "/posts/page/:num" 
 
 # multilang

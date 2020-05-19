@@ -7,6 +7,7 @@ layout: default
     </div>
     <div class="about-post">
         <div class="date"><i class="far fa-calendar-alt"></i>{{page.date | date_to_string }}</div>
+        <div><i class="fas fa-folder-open"></i>{{page.categories}}</div>
         <div class="tags"><i class="fas fa-tags"></i>
             {% for tag in page.tags %}
             <a href="#"> {{tag}}{% unless forloop.last %},{% endunless %} </a>

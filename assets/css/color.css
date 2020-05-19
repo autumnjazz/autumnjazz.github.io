@@ -35,8 +35,8 @@ html {
     color: #333;
 }
 
-.nav{
-    background-color: #ffe6a6;
+.nav, .sidebar{
+    background-color: #fff7e3;
 }
 
 .menu > ul > li > a{
@@ -63,7 +63,7 @@ body.enlarged .nav {
    color:#EEA0A6;
 }
 .about-post > div{
-    color: #333;
+    color: #666;
 }
 
 .pagination > li > a{
@@ -72,8 +72,7 @@ body.enlarged .nav {
 
 .pagination > li > a:hover,
 .pagination > li > a:focus {
-    background: #666 none repeat scroll 0 0;
-    border-color: #666;
+    background: #dbdbdb none repeat scroll 0 0;
     color: #ffffff;
 }
 
@@ -81,14 +80,15 @@ body.enlarged .nav {
 .pagination > .active > a,
 .pagination > .active > a:focus,
 .pagination > .active > a:hover{
-    background-color: #666;
-    border-color: #666;
+    background-color: #dbdbdb;
+    
     color: #fff;
 }
 
 .page-number.active > a{
-    background: #E3EAA5 none repeat scroll 0 0;
-    border-color: #E3EAA5;
+    background: #fff7e3 none repeat scroll 0 0;
+    border: 1px solid;
+    border-color: #dbdbdb;
     color: #777
 }
 
@@ -110,25 +110,8 @@ body.enlarged .nav {
     color: #333;
 }
 
-@media (max-width: 1235px){
-    .mobile-nav {
-        background: #ffe6a6;
-    }
 
-    .mobile-menu{
-        color: #000;
-    }
-
-    .mobile-arrow:hover{
-        
-        color: #E3EAA5;
-    }
-
-    .whole-page{
-        border: none;
-    
-    }
-    
+#myBtn {
+    background-color: #EEA0A6;
+    color: #333;
 }
-
-

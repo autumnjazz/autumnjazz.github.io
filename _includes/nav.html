@@ -6,40 +6,25 @@
 <div class="nav">
     <div class="description">
         <div class="logo"><a href="{{site.baseurl}}/index.html">
-            <img src="{{site.baseurl}}/assets/img/logo.png" alt=""></a>
+                <img src="{{site.baseurl}}/assets/img/logo.png" alt=""></a>
         </div>
         <div class="myword"> {{site.my_word}}</div>
     </div>
-    <div class="menu">
-        <ul class="metismenu" id="side-menu">
-            <li> <a class="has-arrow" href="javascript: void(0);" aria-expanded="false">Algorithm</a>
-                <ul class="mm-collapse menu-second">
-                    <li><a href="{{site.baseurl}}/categories/technique">Techniques</a></li>
-                    <li><a href="{{site.baseurl}}/categories/problemsolving">Problem Solving</a></li>
-                    <li><a href="{{site.baseurl}}/categories/datastructure">Data Structure</a></li>
-                </ul>
-            </li>
-            <li>
-                <a class="has-arrow" href="javascript: void(0);" aria-expanded="false">Web</a>
-                <ul class="mm-collapse menu-second">
-                    <li><a href="{{site.baseurl}}/categories/javaweb">JSP & Servlet</a></li>
-                    <li><a href="{{site.baseurl}}/categories/spring">Spring</a></li>
-                    <li><a href="{{site.baseurl}}/categories/javascript">JavaScript</a></li>
-                </ul>
-            </li>
 
-            <li>
-                <a href="{{site.baseurl}}/categories/database"><span> DataBase </span></a>
-            </li>
+    <div class="widget aboutme">
+        <div class="widget-name">about me</div>
+        <!-- <img src="{{site.baseurl}}/assets/img/profile.jpg" alt=""> -->
+        <p> {{site.about_me}}</p>
+    </div>
 
-            <li>
-                <a href="{{site.baseurl}}/categories/tip"><span> Tips </span></a>
-            </li>
+    {% include menu.html %}
 
-            <li>
-                <a href="{{site.baseurl}}/categories/project"><span> Projects </span></a>
-            </li>
-
+    <div class="widget contact">
+    <div class="widget-name">contact</div>
+        <ul>
+            <li><a href="http://github.com/{{site.github_username}}"><i class="fab fa-github"></i></a></li>
+            <li><a href="{{site.baseurl}}/instagram"><i class="fab fa-instagram"></i></a></li>
         </ul>
     </div>
+
 </div>
